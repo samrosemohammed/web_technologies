@@ -1,0 +1,375 @@
+/* rem and em Do NOt apply according to html font-size in media-queries 
+So 1rem-1em-16px */
+
+/***********************************/
+/* Below 1344px on Smaller desktop */
+/***********************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 5.3rem;
+  }
+}
+
+/***********************************/
+/* Below 1200px on Landscape Tablets */
+/***********************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero {
+    column-gap: 4.8rem;
+  }
+
+  .heading-tertiory {
+    font-size: 2.8rem;
+  }
+
+  .header {
+    padding: 20px 3.2rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+  }
+
+  .nav-list {
+    gap: 2.4rem;
+  }
+
+  .third-section {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .grid-project {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    column-gap: 3.2rem;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+  }
+}
+
+/***********************************/
+/* Below 1039px on Landscape Tablets */
+/***********************************/
+
+@media (max-width: 65em) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-primary {
+    margin-bottom: 2.4rem;
+  }
+
+  .hero-img {
+    height: 400px;
+  }
+
+  .btn--hire {
+    width: 25%;
+    padding: 1rem 1.8rem;
+  }
+
+  .btn--chat {
+    width: 25%;
+    padding: 1rem 1.8rem;
+  }
+
+  .btn--hireMe {
+    margin-right: 10px;
+  }
+
+  .btn--projects:link,
+  .btn--projects:visited {
+    height: 39.2px;
+  }
+
+  .about-description {
+    margin-bottom: 4.2rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+  }
+
+  /***********************************/
+  /* Mobile Navigation */
+  /***********************************/
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    /* background-color: #087f5b5b; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+
+    /* Hide Navigation */
+    /* Allows no transition at all */
+    /* display: none; */
+
+    /* 1 Hide it visually */
+    opacity: 0;
+
+    /* 2 Make it unccessible to mouse and keyboards */
+    pointer-events: none;
+
+    /* 3 Hide it from screen readers */
+    visibility: none;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+    color: #333;
+  }
+
+  .nav-link:hover,
+  .nav-link:active {
+    color: #20c997;
+  }
+
+  .btn--contact {
+    margin-right: 15px;
+    background-color: #ddd;
+    /* color: #333; */
+    padding: 10px 20px;
+    font-size: 2.4rem !important;
+  }
+
+  .btn--contact:hover {
+    color: #fff;
+  }
+}
+
+/***********************************/
+/* Below 1037px on Landscape Tablets */
+/***********************************/
+@media (max-width: 65em) {
+  .heading-secondary {
+    font-size: 3.8rem;
+  }
+
+  .about-description {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .about-right-part img {
+    padding-left: 20px;
+  }
+}
+
+/***********************************/
+/* Below 947px on Landscape Tablets */
+/***********************************/
+@media (max-width: 59em) {
+  .about-description {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .about-right-part img {
+    height: 370px;
+  }
+}
+
+/***********************************/
+/* Below 913px on Landscape Tablets */
+/***********************************/
+/* @media (max-width: 57em) {
+  .heading-secondary {
+    font-size: 3.6rem !important;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  .about-right-part img {
+    justify-self: center;
+    align-self: center;
+  }
+} */
+
+/* @media (max-width: 50em) {
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    justify-items: center;
+  }
+
+  .about-left-part {
+    text-align: center;
+  }
+
+  .about-right-part img {
+    padding-left: 0 !important;
+    height: 200px;
+  }
+} */
+
+/***********************************/
+/* Below 929px on Landscape Tablets */
+/***********************************/
+
+@media (max-width: 58em) {
+  .heading-primary {
+    font-size: 5rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .hero-img {
+    width: 370px;
+    /* height: 390px; */
+  }
+
+  .btn--hire {
+    padding: 1.2rem 1.8rem;
+    width: 35%;
+  }
+
+  .btn--chat {
+    padding: 1.2rem 1.8rem;
+    width: 35%;
+  }
+
+  .about-right-part img {
+    padding-left: 40px;
+  }
+
+  .about-description {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+}
+
+/***********************************/
+/* Below 768px on Landscape Tablets */
+/***********************************/
+
+@media (max-width: 48em) {
+  .hero {
+    grid-template-columns: 1fr;
+    /* padding: auto 0; */
+    gap: 6.4rem;
+  }
+
+  .hero-left-part {
+    /* align-self: center; */
+    justify-self: center;
+    text-align: center;
+  }
+
+  .hero-left-part {
+    margin-top: 0;
+  }
+
+  .hero-right-part {
+    /* margin-left: 143px; */
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+
+  .about-description {
+    font-size: 1.7rem;
+    line-height: 1.6;
+  }
+
+  .about-right-part img {
+    height: 250px;
+    padding-left: 0;
+  }
+
+  .grid-2cols-2rows {
+    padding: 0 5.6rem;
+  }
+
+  .project-description {
+    padding: 0 4.4rem;
+    line-height: 1.6;
+  }
+}
+
+/***********************************/
+/* Below 544px on Phones */
+/***********************************/
+@media (max-width: 34em) {
+  .grid-2cols-2rows {
+    grid-template-columns: 1fr;
+    width: 80%;
+    row-gap: 4rem;
+  }
+
+  .logos img {
+    height: 3.2rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5.6rem;
+  }
+
+  .about-description {
+    font-size: 1.7rem;
+    line-height: 1.6;
+  }
+
+  .project-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}

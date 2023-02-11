@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Mohammed Samorse - Personal Portofolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-brand">
+        <a href="#">
+          <img
+            class="hero-img-brand"
+            src="img/MyPicture.jpg"
+            alt="Mohammed Samrose image"
+          />
+        </a>
+        <span class="brand-span">MD Samrose</span>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-items">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <!-- <li class="nav-items">
+            <a class="nav-link" href="#academy">Academy</a>
+          </li> -->
+          <a class="nav-link btn btn--contact" href="#footer">Contact</a>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="first-section" id="home">
+        <div class="hero">
+          <div class="hero-left-part">
+            <span class="hero-span">It's me</span>
+            <h1 class="heading-primary">Mohammed Samrose</h1>
+            <p class="hero-text">Web Developer & UI / UX Designer</p>
+            <button class="btn btn--hire">Hire Me</button>
+            <button class="btn btn--chat">Let's Chat</button>
+          </div>
+          <div class="hero-right-part">
+            <img
+              class="hero-img"
+              src="img/MyPicture.jpg"
+              alt="Mohammed Samrose picture"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="second-section" id="academy">
+        <div class="container">
+          <h2 class="heading-secondary-academy">Academy</h2>
+        </div>
+        <div class="logos">
+          <img
+            src="https://heraldcollege.edu.np/images/footer/footer-logo.svg"
+            alt="Herald college"
+          />
+          <div class="school">
+            <img
+              class="school"
+              src="img/trinity.png"
+              alt="Trinity International College"
+            />
+            <span class="school-name">Trinity College</span>
+          </div>
+          <div class="school">
+            <img
+              class="school"
+              src="https://svionline.net/wp-content/uploads/2018/12/logo.png"
+              alt="Siddhartha Vanasthali Institute logo"
+            />
+            <span class="school-name school-name-svi">svi</span>
+          </div>
+          <img src="img/wlv.png" alt="University of Wolverhampton logo" />
+        </div>
+      </section>
+
+      <section class="third-section" id="about">
+        <div class="container grid">
+          <div class="about-left-part">
+            <span class="about-me">About Me</span>
+            <h2 class="heading-secondary">
+              I'm a Web developer as well as UI / UX desinger
+            </h2>
+            <p class="about-description">
+              I am a full-stack web developer and UI/UX designer with 1 years of
+              experience in the industry. With a passion for creating intuitive
+              and user-friendly interfaces, I have honed my skills in HTML, CSS,
+              JavaScript, and various front-end frameworks. I am always striving
+              to stay ahead of the curve, constantly learning and experimenting
+              with new technologies and design trends.
+            </p>
+            <button class="btn btn--hireMe">Hire Me</button>
+            <a href="#projects" class="btn btn--projects">Projects</a>
+          </div>
+
+          <div class="about-right-part">
+            <img
+              src="img/secondPicture.jpg"
+              alt="Mohammed Samrose feeling the nature picutre"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="fourth-section" id="services">
+        <div class="container center-text">
+          <h3 class="heading-tertiory">My Services</h3>
+        </div>
+        <div class="container grid-2cols-2rows">
+          <div class="box">
+            <ion-icon class="service-icon" name="laptop-outline"></ion-icon>
+            <h4>Web Development</h4>
+          </div>
+          <div class="box">
+            <ion-icon class="service-icon" name="brush-outline"></ion-icon>
+            <h4>UI / UX Design</h4>
+          </div>
+          <div class="box">
+            <ion-icon class="service-icon" name="settings-outline"></ion-icon>
+            <h4>Web Hosting</h4>
+          </div>
+          <div class="box">
+            <ion-icon class="service-icon" name="logo-python"></ion-icon>
+            <h4>Back End</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="fifth-section" id="projects">
+        <div class="container">
+          <div class="center-text">
+            <h3 class="heading-tertiory">My Projects</h3>
+            <p class="project-description">
+              These all projects are some small project that I have done in my
+              free time. In order to inhance my HTML, CSS, and Js skills.
+            </p>
+          </div>
+        </div>
+        <div class="container grid-project">
+          <figure class="project-img">
+            <img src="img/OmnifoodProject.png" alt="Omnifood website" />
+          </figure>
+          <figure class="project-img">
+            <img src="img/DrumProject.png" alt="Drum game website" />
+          </figure>
+          <figure class="project-img">
+            <img src="img/diceProjectpng.png" alt="Drum game website" />
+          </figure>
+          <figure class="project-img">
+            <img src="img/signupProjectpng.png" alt="Drum game website" />
+          </figure>
+          <figure class="project-img">
+            <img src="img/tindogProjectpng.png" alt="Drum game website" />
+          </figure>
+          <figure class="project-img">
+            <img src="img/CalculatoreProject.png" alt="Drum game website" />
+          </figure>
+        </div>
+      </section>
+      <footer class="footer" id="footer">
+        <div class="container grid-footer">
+          <div>
+            <h4 class="heading-footer">
+              Port<span class="span--green">folio</span>
+            </h4>
+            <ul class="social-links">
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://www.instagram.com/bekey_9/"
+                  ><ion-icon
+                    class="footer-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100069831617699"
+                  ><ion-icon class="footer-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/mohammed-samrose-64b14525a/"
+                  ><ion-icon class="footer-icon" name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <p class="copyright">
+              Copyright &copy; 2023 by Mohammed Samrose. All rights reversed
+            </p>
+          </div>
+          <div class="address-col">
+            <p class="footer-heading">Contact</p>
+            <address class="contact">
+              <p class="address">Bafal Ring Road, Kathmandu</p>
+              <a class="footer-link" href="tel:9828047184">9828047184</a><br />
+              <a class="footer-link" href="melto: samrose.mohammed@gmail.com"
+                >samrose.mohammed@gmail.com</a
+              >
+            </address>
+          </div>
+          <div class="about-col">
+            <p class="footer-heading">About</p>
+            <ul class="footer-col">
+              <li>
+                <a class="footer-link" href="">Freelancer</a>
+              </li>
+              <li>
+                <a class="footer-link" href="">UI / UX & Web Developer</a>
+              </li>
+              <li>
+                <a class="footer-link" href="">Mohammed Samrose</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
