@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/7784/7784482.png"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
     <script
@@ -20,7 +25,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script defer src="script.js"></script>
     <title>Mohammed Samorse - Personal Portofolio</title>
   </head>
   <body>
@@ -29,7 +33,7 @@
         <a href="#">
           <img
             class="hero-img-brand"
-            src="img/MyPicture.jpg"
+            src="img/MyPicture-min.jpg"
             alt="Mohammed Samrose image"
           />
         </a>
@@ -67,13 +71,20 @@
             <span class="hero-span">It's me</span>
             <h1 class="heading-primary">Mohammed Samrose</h1>
             <p class="hero-text">Web Developer & UI / UX Designer</p>
+            <p class="hero-description">
+              "A front-end developer with expertise in HTML, CSS, and
+              JavaScript. I specialize in building responsive and user-friendly
+              websites that bring ideas and make them alive in website. Take a
+              look at my portfolio and see how I can help you create your next
+              digital project."
+            </p>
             <button class="btn btn--hire">Hire Me</button>
             <button class="btn btn--chat">Let's Chat</button>
           </div>
           <div class="hero-right-part">
             <img
               class="hero-img"
-              src="img/MyPicture.jpg"
+              src="img/MyPicture-min.jpg"
               alt="Mohammed Samrose picture"
             />
           </div>
@@ -100,7 +111,7 @@
           <div class="school">
             <img
               class="school"
-              src="https://svionline.net/wp-content/uploads/2018/12/logo.png"
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0DbPBQCnBWy3P93SPMPTtHIXclrfSD3iyMhNXVhOYrdsmUMwA"
               alt="Siddhartha Vanasthali Institute logo"
             />
             <span class="school-name school-name-svi">svi</span>
@@ -120,17 +131,15 @@
               I am a full-stack web developer and UI/UX designer with 1 years of
               experience in the industry. With a passion for creating intuitive
               and user-friendly interfaces, I have honed my skills in HTML, CSS,
-              JavaScript, and various front-end frameworks. I am always striving
-              to stay ahead of the curve, constantly learning and experimenting
-              with new technologies and design trends.
+              JavaScript, and various front-end frameworks.
             </p>
-            <button class="btn btn--hireMe">Hire Me</button>
+            <a class="btn btn--hireMe">Hire Me</a>
             <a href="#projects" class="btn btn--projects">Projects</a>
           </div>
 
           <div class="about-right-part">
             <img
-              src="img/secondPicture.jpg"
+              src="img/Optimized-secondPicture.jpg"
               alt="Mohammed Samrose feeling the nature picutre"
             />
           </div>
@@ -173,35 +182,50 @@
         </div>
         <div class="container grid-project">
           <figure class="project-img">
-            <img src="img/OmnifoodProject.png" alt="Omnifood website" />
+            <img
+              src="img/Optimized-OmnifoodProject.png"
+              alt="Omnifood website"
+            />
           </figure>
           <figure class="project-img">
-            <img src="img/DrumProject.png" alt="Drum game website" />
+            <img src="img/Optimized-DrumProject.png" alt="Drum game website" />
           </figure>
           <figure class="project-img">
-            <img src="img/diceProjectpng.png" alt="Drum game website" />
+            <img
+              src="img/Optimized-diceProjectpng.png"
+              alt="Drum game website"
+            />
           </figure>
           <figure class="project-img">
-            <img src="img/signupProjectpng.png" alt="Drum game website" />
+            <img
+              src="img/Optimized-signupProjectpng.png"
+              alt="Drum game website"
+            />
           </figure>
           <figure class="project-img">
-            <img src="img/tindogProjectpng.png" alt="Drum game website" />
+            <img
+              src="img/Optimized-tindogProjectpng.png"
+              alt="Drum game website"
+            />
           </figure>
           <figure class="project-img">
-            <img src="img/CalculatoreProject.png" alt="Drum game website" />
+            <img
+              src="img/Optimized-CalculatoreProject.png"
+              alt="Drum game website"
+            />
           </figure>
         </div>
       </section>
       <footer class="footer" id="footer">
         <div class="container grid-footer">
-          <div>
-            <h4 class="heading-footer">
+          <div class="portfolio">
+            <h4 class="heading-footer" id="portfolio-heading">
               Port<span class="span--green">folio</span>
             </h4>
             <ul class="social-links">
               <li>
                 <a
-                  class="footer-link"
+                  class="footer-link link-insta"
                   target="_blank"
                   href="https://www.instagram.com/bekey_9/"
                   ><ion-icon
@@ -212,7 +236,7 @@
               </li>
               <li>
                 <a
-                  class="footer-link"
+                  class="footer-link link-fb"
                   target="_blank"
                   href="https://www.facebook.com/profile.php?id=100069831617699"
                   ><ion-icon class="footer-icon" name="logo-facebook"></ion-icon
@@ -220,7 +244,7 @@
               </li>
               <li>
                 <a
-                  class="footer-link"
+                  class="footer-link link-ln"
                   target="_blank"
                   href="https://www.linkedin.com/in/mohammed-samrose-64b14525a/"
                   ><ion-icon class="footer-icon" name="logo-linkedin"></ion-icon
@@ -236,7 +260,7 @@
             <address class="contact">
               <p class="address">Bafal Ring Road, Kathmandu</p>
               <a class="footer-link" href="tel:9828047184">9828047184</a><br />
-              <a class="footer-link" href="melto: samrose.mohammed@gmail.com"
+              <a class="footer-link" href="mailto:samrose.mohammed@gmail.com"
                 >samrose.mohammed@gmail.com</a
               >
             </address>
@@ -257,6 +281,16 @@
           </div>
         </div>
       </footer>
+      <!-- <footer class="footer">
+        <div class="container grid-footer">
+          <div class="portfolio">
+            <h4 class="heading-footer">
+              Port<span class="span--green">folio</span>
+            </h4>
+          </div>
+        </div>
+      </footer> -->
     </main>
+    <script defer src="script.js"></script>
   </body>
 </html>

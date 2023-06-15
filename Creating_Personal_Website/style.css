@@ -21,6 +21,8 @@ body {
   font-family: "Inter", sans-serif;
   color: #343a40;
   line-height: 1;
+
+  /* how if there is nothing absolutely position in relation to body */
   overflow-x: hidden;
 }
 
@@ -51,22 +53,27 @@ FOR NAVIGATION
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: relative;
+}
+
+.header-brand {
+  padding-left: 10px;
 }
 
 .hero-img-brand {
   object-fit: cover;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   margin-right: 10px;
 }
 
 .brand-span {
   float: right;
-  margin-top: 12px;
+  margin-top: 16px;
   color: #f7f7f7;
   letter-spacing: 1px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .nav-list {
@@ -124,7 +131,7 @@ FOR NAVIGATION
 }
 
 .sticky .first-section {
-  margin-top: 8.2rem;
+  margin-top: 9.6rem;
 }
 
 /* 
@@ -135,17 +142,18 @@ FOR MOBILE NAVIGATION
 
 .btn-mobile-nav {
   border: none;
-  background-color: none;
   cursor: pointer;
-
+  background: none;
   display: none;
 }
 
 .icon-mobile-nav {
-  height: 4rem;
+  height: 4.8rem;
   width: 4.8rem;
-  color: #333;
+  color: #fff;
 }
+
+/* taking that particular element thorugh attributes name */
 
 .icon-mobile-nav[name="close"] {
   display: none;
@@ -192,14 +200,23 @@ FOR FIRST SECTION
 
 .hero-text {
   font-size: 2.4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4.4rem;
+}
+
+.hero-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 5.8rem;
+  width: 95%;
+  color: #f7f7f7;
 }
 
 .hero-img {
   object-fit: cover;
   width: 400px;
-  height: 450px;
-  border-radius: 5px;
+  height: 500px;
+  padding-top: 3.2rem;
+  /* border-radius: 5px; */
 }
 
 .btn {
@@ -216,24 +233,28 @@ FOR FIRST SECTION
 
 .btn--hire {
   width: 20%;
-  padding: 0.8rem 1.8rem;
-  margin-right: 0.8rem;
-}
-
-.btn--hire:hover {
+  padding: 1.2rem 1.8rem;
+  margin-right: 1.4rem;
   background-color: #20c997;
   color: #fff;
 }
 
-.btn--chat:hover {
-  border: 1px solid #fff;
-  background-color: #20c997;
+.btn--hire:hover {
+  background-color: #12b886;
   color: #fff;
 }
 
 .btn--chat {
+  padding: 1.2rem 1.8rem;
+  border: 1px solid #fff;
+  background-color: #087f5b;
+  color: #fff;
   width: 20%;
+}
+
+.btn--chat:hover {
   background-color: #fff;
+  color: #343a40;
 }
 
 /* 
@@ -275,7 +296,7 @@ FOR SECOND SECTION
 
 .school-name {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #888;
   letter-spacing: 1.2px;
 }
@@ -346,12 +367,12 @@ FOR SECOND SECTION
   text-decoration: none;
   color: #343a40;
   border: 3px solid #20c997;
-  height: 43.2px;
+  /* height: 43.2px; */
 }
 
 .about-right-part img {
   object-fit: cover;
-  width: 400px;
+  /* width: 400px; */
   height: 400px;
 }
 
@@ -462,9 +483,9 @@ FOR SIXTH SECTION
   border-top: 1px solid #ddd;
 }
 
-/* .span--green {
+.span--green {
   color: #099268;
-} */
+}
 
 .grid-footer {
   display: grid;
@@ -473,6 +494,7 @@ FOR SIXTH SECTION
 
 .heading-footer {
   margin-bottom: 2.4rem;
+  cursor: pointer;
 }
 
 .social-links {
@@ -533,4 +555,13 @@ FOR SIXTH SECTION
 .footer-link:hover,
 .footer-link:active {
   color: #555;
+}
+
+/* TRANSFORMING BETTER CSS */
+.third-section .container {
+  padding: 0;
+}
+
+.grid {
+  column-gap: 9.6rem;
 }
