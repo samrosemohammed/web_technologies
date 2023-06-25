@@ -1,9 +1,9 @@
-console.log("Hello world!");
+// console.log("Hello world!");
 
-const myName = "Jonas Schmedtmann";
-const h1 = document.querySelector(".heading-primary");
-console.log(myName);
-console.log(h1);
+// const myName = "Mohammed Samrose";
+// const h1 = document.querySelector(".heading-primary");
+// console.log(myName);
+// console.log(h1);
 
 // h1.addEventListener("click", function () {
 //   h1.textContent = myName;
@@ -107,9 +107,30 @@ checkFlexGap();
 const hireBtn = document.querySelector(".btn--hire");
 const chatBtn = document.querySelector(".btn--chat");
 const hireMe = document.querySelector(".btn--hireMe");
+const resumeBtn = document.querySelector(".btn--contact");
+
+resumeBtn.addEventListener("click", function () {
+  // Create a link element
+  var link = document.createElement("a");
+  link.href = "resume.pdf"; // Replace with the actual path to your resume file
+  link.download = "resume.pdf"; // Set the desired file name
+
+  // Append the link to the document body
+  document.body.appendChild(link);
+
+  // Simulate a click on the link to trigger the download
+  link.click();
+
+  // Remove the link from the document body (optional)
+  document.body.removeChild(link);
+});
 
 hireBtn.addEventListener("click", () => {
-  window.location.href = "mailto:samrose.mohammed@gmail.com";
+  const emailAddress = "samrose.mohammed@gmail.com";
+
+  const mailtoLink = `mailto:${emailAddress}`;
+
+  window.location.href = mailtoLink;
 });
 
 chatBtn.addEventListener("click", () => {
@@ -117,7 +138,11 @@ chatBtn.addEventListener("click", () => {
 });
 
 hireMe.addEventListener("click", () => {
-  window.location.href = "mailto:samrose.mohammed@gmail.com";
+  const emailAddress = "samrose.mohammed@gmail.com";
+
+  const mailtoLink = `mailto:${emailAddress}`;
+
+  window.location.href = mailtoLink;
 });
 
 // for social link
@@ -163,6 +188,8 @@ const portfolioHeading = document.getElementById("portfolio-heading");
 portfolioHeading.onclick = function () {
   location.href = "#home";
 };
+
+/* Download pdf */
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
